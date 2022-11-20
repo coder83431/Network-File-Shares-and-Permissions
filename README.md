@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+<img src="https://imgur.com/ocgeUoz.png" alt=" alt="osTicket logo"/>
 </p>
 
 <h1>DNS: Network File Shares and Permissions </h1>
