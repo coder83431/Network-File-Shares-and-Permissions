@@ -59,6 +59,12 @@ This tutorial we will create and test some file shares and security group. This 
 <p>
 <img src="https://imgur.com/Lq68YV5.png" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+        
+<p>
+<img src="https://imgur.com/gAD99s9.png" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+                                                                                       
+                                                                                                                                                                    
 <p>
 4. Set the following permissions (share the folder) for the “Domain Users” group:
 Folder: “read-access”, Group: “Domain Users”, Permission: “Read”.
@@ -72,7 +78,7 @@ Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Wri
 <br />
 
 <p>
-<img src="https://i.imgur.com/yt4ZPAk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/oXede5t.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 5. On Client-1, navigate to the shared folder (start, run, \\dc-1)
@@ -80,11 +86,22 @@ Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Wri
 <br />
 
 <p>
-<img src="https://i.imgur.com/8ob8uQq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/cHX8FIE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+                                                                                               
+<p>
+<img src="https://imgur.com/mUGrs1e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+                                                                                               
+<p>
+<img src=" https://imgur.com/QC6v5NY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>                                                                                               
+                                                                                               
 <p>
 6.Try to access the folders you just created. Which folders can you access?
 
+                                                                                               
+                                                                                               
 </p>
 <br />
 
