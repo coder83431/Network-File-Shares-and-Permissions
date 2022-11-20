@@ -96,7 +96,13 @@ Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Wri
 <p>
 <img src=" https://imgur.com/QC6v5NY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>                                                                                               
-                                                                                               
+ 
+                                                                                                
+ <p>
+<img src=" https://imgur.com/Af82JwJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>                                                                                                    
+                                                                                                
+                                                                                                
 <p>
 6.Try to access the folders you just created. Which folders can you access?
 
@@ -106,9 +112,14 @@ Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Wri
 <br />
 
 <p>
-<img src="https://i.imgur.com/SbhSS6V.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/iUhcIO1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+                                                                                               
 <p>
+<img src="https://imgur.com/s5mFFkp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+                                                                                                          
+                                                                                               
 7. Go back to DC-1, in Active Directory, create a security group called “ACCOUNTANTS”
 
 
@@ -117,7 +128,7 @@ Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Wri
 <br />
 
 <p>
-<img src="https://i.imgur.com/wVSvcC6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/I2pvseV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 8. On the “accounting” folder you created earlier, set the following permissions:
@@ -127,7 +138,7 @@ Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write�
 <br />
 
 <p>
-<img src="https://i.imgur.com/U0zZqC1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/4Zp6BsM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 9. On Client-1, as  <someuser>, try to access the accountants folder. It should fail. 
@@ -136,23 +147,22 @@ Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write�
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/IdTzZWd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-10. Log out of Client-1 as  <someuser>
 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/0LOpcLJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/3u7W5FJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-11. On DC-1, make <someuser> a member of the “ACCOUNTANTS”  Security Group.
+11. Log out of Client-1 as  <someuser>. On DC-1, make <someuser> a member of the “ACCOUNTANTS”  Security Group.
 
 </p>
 
+<p>
+<img src="https://imgur.com/tKQjZWm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>                                                                                      
+                                                                                               
 <p>
 Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\ - Does it work now?
 </p>
