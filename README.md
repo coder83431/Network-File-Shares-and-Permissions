@@ -29,7 +29,7 @@ This tutorial we will create and test some file shares and security group. This 
 
 
 <p>  
-<img src = "https://i.imgur.com/FoDQra2.png" " height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src = "" " height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 </p>
 
