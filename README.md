@@ -28,13 +28,6 @@ This tutorial we will create and test some file shares and security group. This 
 <h2>Installation Steps</h2>
 
 
-<p>  
-<img src = "" " height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
-</p>
-
-<p>Overview</p>
-
 <p>
 <img src = "https://i.imgur.com/GFYFR0R.png" " height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -44,7 +37,7 @@ This tutorial we will create and test some file shares and security group. This 
 </p>                                                                                                    
                                                                                                      
 <p>
-<img src= "https://i.imgur.com/Pk3J6Rk.png" " height="80%" width="80%" alt="Disk Sanitization Steps" />
+<img src= "https://imgur.com/bPK5voU.png" " height="80%" width="80%" alt="Disk Sanitization Steps" />
 </p>
 
 <p>
@@ -56,7 +49,7 @@ This tutorial we will create and test some file shares and security group. This 
 <br />
 
 <p>
-<img src="https://i.imgur.com/dDY9AQi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/6ygCAOi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 3. On DC-1, on the C:\ drive, create 4 folders: “read-access”, “write-access”, “no-access”, “accounting”.
@@ -64,7 +57,7 @@ This tutorial we will create and test some file shares and security group. This 
 <br />
 
 <p>
-<img src="https://i.imgur.com/PB1vmBe.png" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/Lq68YV5.png" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 4. Set the following permissions (share the folder) for the “Domain Users” group:
