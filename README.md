@@ -3,7 +3,7 @@
 </p>
 
 <h1>Network File Shares and Permissions </h1>
-This tutorial we will create and test some file shares and security group. The file shares created will be set to Read, Write, or Deny access to individual users or groups.
+In this tutorial we will create and test some file shares and security groups. The file shares created will be set to Read, Write, or Deny access to individual users or groups.
 
 
 <h2>Environments and Technologies Used</h2>
@@ -17,14 +17,13 @@ This tutorial we will create and test some file shares and security group. The f
 
 <h2>List of Prerequisites</h2>
 
--Microsoft Active Directory
--Microsoft Azure
--Microsoft Powershell (ISE)
--Remote Desktop                                                                 
--A domain admin account setted up on a Remote Desktop VM.
--A client VM desktop connected to the domain VM through Active Directory.
--A file containing a list of employees downloaded into the domain account's Active Directory. We will be logging into the client's VM s under one of the employees accounts.
--Remote Desktop
+- Microsoft Active Directory
+- Microsoft Azure
+- Microsoft Powershell (ISE)
+- Remote Desktop                                                                 
+- A domain admin account setted up on a Remote Desktop VM.
+- A client VM desktop connected to the domain VM through Active Directory.
+- A file containing a list of employees downloaded into the domain account's Active Directory. We will be logging into the client's VM s under one of the employees accounts.
 
 <h2>Installation Steps</h2>
 
