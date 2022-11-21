@@ -164,6 +164,6 @@ Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write�
 12. Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\. Now the user should have access to the "accounting" folder.
 </p>
  
- <p> Don't forget to clean up and delete your resources (resource groups and VMs) after completing this lab inorder to prevent draining all of your free Microsoft Azure credits.
+ <p> 13. Don't forget to clean up and delete your resources (resource groups and VMs) after completing this lab inorder to prevent draining all of your free Microsoft Azure credits.
  </p>
 <br />
