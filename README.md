@@ -13,7 +13,8 @@ In this tutorial we will create and test some file shares and security groups. T
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (version 22H2), Windows Server 2022                                                               
+- Windows 10</b> (version 22H2)
+- Windows Server 2022                                                               
 
 <h2>List of Prerequisites</h2>
 
