@@ -2,27 +2,29 @@
 <img src="https://imgur.com/ocgeUoz.png" alt=" alt="osTicket logo"/>
 </p>
 
-<h1>DNS: Network File Shares and Permissions </h1>
-This tutorial we will create and test some file shares and security group. This will create these file shares while logged on into a domain admin account. We will observe the file permissions that we were granted and denied access within a normal user account. The domain admin and normal user account is connected to each other through Active Directory.<br />
+<h1>Network File Shares and Permissions </h1>
+This tutorial we will create and test some file shares and security group. The file shares created will be set to Read, Write, or Deny access to individual users or groups.
 
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure 
 - Remote Desktop
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> (version 22H2)
+-Windows Server 2022                                                               
 
 <h2>List of Prerequisites</h2>
 
 -Microsoft Active Directory
 -Microsoft Azure
 -Microsoft Powershell (ISE)
+-Remote Desktop                                                                 
 -A domain admin account setted up on a Remote Desktop VM.
 -A client VM desktop connected to the domain VM through Active Directory.
--A file containing a list of employees downloaded into the domain accounts Active Directory.
+-A file containing a list of employees downloaded into the domain account's Active Directory. We will be logging into the client's VM s under one of the employees accounts.
 -Remote Desktop
 
 <h2>Installation Steps</h2>
@@ -32,7 +34,7 @@ This tutorial we will create and test some file shares and security group. This 
 <img src = "https://i.imgur.com/GFYFR0R.png" " height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
  <p>
-1. Connect/log into DC-1 as your domain admin account (mydomain.com\jane_admin).
+1. Connect into DC-1 as your domain admin account (mydomain.com\jane_admin).
 
 </p>                                                                                                    
                                                                                                      
@@ -44,7 +46,7 @@ This tutorial we will create and test some file shares and security group. This 
                                                                                                  
                                                                                                  
                                                                                                  
-2. Connect/log into Client-1 as a normal user (mydomain\<someuser>).
+2. Connect/log into Client-1 as a normal user (mydomain\<someuser>). For this demonstration, I will be logged into a account as a user named "bubo sud".
 </p>
 <br />
 
@@ -70,7 +72,8 @@ This tutorial we will create and test some file shares and security group. This 
 Folder: “read-access”, Group: “Domain Users”, Permission: “Read”.
 Folder: “write-access”,  Group: “Domain Users”, Permissions: “Read/Write”
 Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Write”
-(Skip accounting for now)
+We will skip assigning any permissions to the "accounting" folder for now.
+                                                                               
 
 
 
@@ -103,7 +106,7 @@ Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Wri
 </p>                                                                                                    
                                                                                                 
                                                                                                 
-6.Try to access the folders you just created. Which folders can you access?
+6.Try to access the folders you just created. Being the domain user "bubo sud", notice how you can access but can't write in the folder named "read-access". 
 
                                                                                                
                                                                                                
@@ -119,7 +122,7 @@ Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Wri
 </p>
                                                                                                           
                                                                                                
-7. Go back to DC-1, in Active Directory, create a security group called “ACCOUNTANTS”
+7. Now we will focus on assigning permissions to the folder named "accouting". We will make the user "bubo sud" be a member of a security group that will have the ability to perform actions on the "accounting" foldr. Go back to DC-1,and in Active Directory, create a security group called “ACCOUNTANTS”. 
 
 
 
@@ -140,7 +143,7 @@ Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write�
 <img src="https://imgur.com/4Zp6BsM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-9. On Client-1, as  <someuser>, try to access the accountants folder. It should fail. 
+9. On Client-1, as  <someuser>, try to access the accountants folder. It should fail. This is because the users is currently given the permissions of "Domain Users" and thus doens't have access to the "accounting" folder.
 
 
 </p>
@@ -163,6 +166,6 @@ Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write�
 </p>                                                                                      
                                                                                                
 <p>
-Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\ - Does it work now?
+Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\. Now the user should have access to the "accounting" folder.
 </p>
 <br />
