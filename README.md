@@ -92,10 +92,17 @@ Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Wri
 <p>
 <img src="https://imgur.com/mUGrs1e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-                                                                                                                                                                                                 
-                                                                                                
-                                                                                                
+                                                                                               
 <p>
+<img src=" https://imgur.com/QC6v5NY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>                                                                                               
+ 
+                                                                                                
+ <p>
+<img src=" https://imgur.com/Af82JwJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>                                                                                                    
+                                                                                                
+                                                                                                
 6.Try to access the folders you just created. Which folders can you access?
 
                                                                                                
