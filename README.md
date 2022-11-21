@@ -28,10 +28,6 @@ This tutorial we will create and test some file shares and security group. The f
 
 <h2>Installation Steps</h2>
 
-
-<p>
-<img src = "https://i.imgur.com/GFYFR0R.png" " height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
  <p>
 1. Connect into DC-1 as your domain admin account (mydomain.com\jane_admin).
 
@@ -165,6 +161,9 @@ Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write�
 </p>                                                                                      
                                                                                                
 <p>
-Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\. Now the user should have access to the "accounting" folder.
+12. Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\. Now the user should have access to the "accounting" folder.
 </p>
+ 
+ <p> Don't forget to clean up and delete your resources (resource groups and VMs) after completing this lab inorder to prevent draining all of your free Microsoft Azure credits.
+ </p>
 <br />
