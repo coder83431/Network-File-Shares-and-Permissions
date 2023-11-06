@@ -3,7 +3,7 @@
 </p>
 
 <h1>Network File Shares and Permissions </h1>
-In this tutorial we will create and test some file shares and security groups. The file shares created will be set to Read, Write, or Deny access to individual users or groups.
+In this tutorial, we will create and test some file shares and security groups. The file shares created will be set to Read, Write, or Deny access to individual users or groups.
 
 
 <h2>Environments and Technologies Used</h2>
@@ -22,9 +22,9 @@ In this tutorial we will create and test some file shares and security groups. T
 - Microsoft Azure
 - Microsoft Powershell (ISE)
 - Remote Desktop                                                                 
-- A domain admin account setted up on a Remote Desktop VM.
+- A domain admin account set up on a Remote Desktop VM.
 - A client VM desktop connected to the domain VM through Active Directory.
-- A file containing a list of employees downloaded into the domain account's Active Directory. We will be logging into the client's VM s under one of the employees accounts.
+- A file containing a list of employees downloaded into the domain account's Active Directory. We will be logging into the client's VMs under one of the employee's accounts.
 
 <h2>Installation Steps</h2>
 
@@ -41,7 +41,7 @@ In this tutorial we will create and test some file shares and security groups. T
                                                                                                  
                                                                                                  
                                                                                                  
-2. Connect/log into Client-1 as a normal user (mydomain\<someuser>). For this demonstration, I will be logged into a account as a user named "bubo sud".
+2. Connect/log into Client-1 as a normal user (mydomain\<someuser>). For this demonstration, I will be logged into an account as a user named "bubo sud".
 </p>
 <br />
 
@@ -49,7 +49,7 @@ In this tutorial we will create and test some file shares and security groups. T
 <img src="https://imgur.com/6ygCAOi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-3. On DC-1, on the C:\ drive, create 4 folders: “read-access”, “write-access”, “no-access”, “accounting”.
+3. On DC-1, on the C:\ drive, create 4 folders: “read-access”, “write-access”, “no-access”, and “accounting”.
 </p>
 <br />
 
@@ -86,22 +86,12 @@ We will skip assigning any permissions to the "accounting" folder for now.
 <p>
 <img src="https://imgur.com/cHX8FIE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-                                                                                               
-<p>
-<img src="https://imgur.com/mUGrs1e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-                                                                                               
-<p>
-<img src=" https://imgur.com/QC6v5NY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>                                                                                               
+                                                                                                                                                                                          
  
                                                                                                 
- <p>
-<img src=" https://imgur.com/Af82JwJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>                                                                                                    
+                                                                                                                                                                                        
                                                                                                 
-                                                                                                
-6.Try to access the folders you just created. Being the domain user "bubo sud", notice how you can access but can't write in the folder named "read-access". 
+6. Try to access the folders you just created. Being the domain user "bubo sud", notice how you can access but can't write in the folder named "read-access". 
 
                                                                                                
                                                                                                
@@ -117,7 +107,7 @@ We will skip assigning any permissions to the "accounting" folder for now.
 </p>
                                                                                                           
                                                                                                
-7. Now we will focus on assigning permissions to the folder named "accouting". We will make the user "bubo sud" be a member of a security group that will have the ability to perform actions on the "accounting" foldr. Go back to DC-1,and in Active Directory, create a security group called “ACCOUNTANTS”. 
+7. Now we will focus on assigning permissions to the folder named "accounting". We will make the user "bubo sud" a member of a security group that will have the ability to perform actions on the "accounting" folder. Go back to DC-1, and in Active Directory, create a security group called “ACCOUNTANTS”. 
 
 
 
@@ -138,7 +128,7 @@ Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write�
 <img src="https://imgur.com/4Zp6BsM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-9. On Client-1, as  <someuser>, try to access the accountants folder. It should fail. This is because the users is currently given the permissions of "Domain Users" and thus doens't have access to the "accounting" folder.
+9. On Client-1, as  <someuser>, try to access the accountants folder. It should fail. This is because the users is currently given the permissions of "Domain Users" and thus don't have access to the "accounting" folder.
 
 
 </p>
@@ -152,7 +142,7 @@ Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write�
 <img src="https://imgur.com/3u7W5FJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-11. Log out of Client-1 as  <someuser>. On DC-1, make <someuser> a member of the “ACCOUNTANTS”  Security Group.
+10. Log out of Client-1 as  <someuser>. On DC-1, make <someuser> a member of the “ACCOUNTANTS”  Security Group.
 
 </p>
 
@@ -161,9 +151,9 @@ Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write�
 </p>                                                                                      
                                                                                                
 <p>
-12. Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\. Now the user should have access to the "accounting" folder.
+11. Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\. Now the user should have access to the "accounting" folder.
 </p>
  
- <p> 13. Don't forget to clean up and delete your resources (resource groups and VMs) after completing this lab inorder to prevent draining all of your free Microsoft Azure credits.
+ <p> 12. Don't forget to clean up and delete your resources (resource groups and VMs) after completing this lab in order to prevent draining all of your free Microsoft Azure credits.
  </p>
 <br />
